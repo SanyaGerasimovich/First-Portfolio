@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletwo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header_container">
+        <div class="logo">
+            <div class="logo_img">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="logo_text">
+                ALEX
+            </div>
+        </div>
+        <div class="name">
+            <div class="my_name">
+                ALEXANDR
+            </div>
+            <div class="my_surname">
+                GERASIMOVICH
+            </div>
+        </div>
+    </header>
+    <main class="main_container">
+        <section class="about_me" id="about_me">
+            <h1 class="title">
+               About Me
+            </h1>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <div class="circle" onclick="hiddenAbout()">
+            <div class="container_menu">
+                <div class="projects" id="projects">
+                    <div class="project_item"><img src="img/x.svg" alt="X" class="x" onclick="hiddenProjects()"></div>
+                    <div class="project_item"><a href="https://github.com/SanyaGerasimovich?tab=repositories" target="_blank" class="item_link"><img src="img/github.svg" alt="GItHub">GitHub</a></div>
+                </div>
+                <div class="contact" id="contact">
+                    <div class="contact_item"><img src="img/x.svg" alt="T" class="c" onclick="hiddenContact()"></div>
+                    <div class="contact_item"><a href="https://github.com/SanyaGerasimovich?tab=repositories" target="_blank" class="item_link"><img src="img/telegram.svg" alt="Telegram">Telegram</a></div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul class="menu__items">
+                <li class="menu__item">
+                    <a class="menu_link" onclick="visibleAbout()">ABOUT</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu_link" onclick="visibleProjects()">PROJECTS</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu_link" onclick="visibleContact()">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer class="footer_container">
+        <div class="info">
+            <div class="web">
+                Web Developer
+            </div>
+            <div class="from">
+                From Belarus
+            </div>
+        </div>
+        <div class="icons">
+            <a href="#"><img src="img/twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="img/discord.svg" alt="discord"></a>
+            <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="img/be.svg" alt="be"></a>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

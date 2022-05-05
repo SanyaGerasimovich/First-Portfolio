@@ -1,0 +1,220 @@
+/*-----Обнуление-----*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+/*--------------------*/
+.wrapper{
+    max-width: 1920px;
+    background-color: #000000;
+}
+.header_container {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.logo_img > img{
+
+}
+
+.logo_text {
+    color: #FF003D;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.name {
+    color: #FF003D;
+    text-align: right;
+}
+
+.my_name {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.my_surname {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.main_container {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+}
+
+.circle {
+    height: 600px;
+    border: 30px solid #E40037;
+    border-radius: 50%;
+    box-shadow: 0 0 60px 0 #FF003D, inset 0 0 40px 0 #FF003D;
+    animation: shadow infinite 2.5s ease alternate;
+    opacity: 0.85;
+    cursor: pointer;
+    text-align: center;
+
+}
+@keyframes shadow {
+    from {box-shadow: 0 0 60px 0 #FF003D, inset 0 0 40px 0 #FF003D;}
+    to {box-shadow: 0 0 35px 0 #FF003D, inset 0 0 25px 0 #FF003D;;}
+}
+.menu {
+
+}
+
+.menu__items {
+}
+
+.menu__item {
+    margin-bottom: 50px;
+text-align: right;
+}
+
+.menu_link {
+    writing-mode: vertical-lr;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+.footer_container {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.web {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.from {
+    color: #c0c0c0;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+}
+a{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.4s ease-out 0s;
+}
+a:hover, .x:hover, .c:hover{
+    opacity: 1;
+}
+.about_me{
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.7s ease 0s;
+}
+.title{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.text{
+    color: #c0c0c0;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.projects{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.7s ease 0s;
+}
+.project_item{
+    filter: invert(1);
+    font-size: 30px;
+}
+.item_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.item_link > img{
+    width: 1.3em;
+}
+.x, .c{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.4s ease-out 0s;
+    margin: 0 auto;
+    width: 1.3em;
+    border: none;
+}
+.container_menu{
+    margin: 10% auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.7s ease 0s;
+}
+.contact_item{
+    filter: invert(1);
+    font-size: 30px;
+}
